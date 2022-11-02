@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/generic.css">
+</head>
+<body>
+    <div class="container">
+        <div id="money">
+            <input id="myMoney" type="text" value="20" disabled="true">
+        </div>
+        <div id="board" class="board">
+            <div class="mySpace">
+                <div class="card">
+                    <div class="card-head">
+                        <div class="card-type"></div>
+                        <div class="card-cost"></div>
+                    </div>
+                    <div class="card-center"></div>
+                    <div class="card-footer"></div>
+                </div>
+            </div>
+        </div>
+        <div id="store" class="store dnone">
+            <div id="store-items"></div>
+            <div class="store-buttons">
+                <button class="btn" onclick="passTurnInShop()">Pasar</button>
+                <button class="btn" onclick="buyCard()">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
